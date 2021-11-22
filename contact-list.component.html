@@ -1,0 +1,31 @@
+<div>
+    <input id="name" type="text" placeholder="Enter name" #name>
+</div>
+<div>
+    <input id="email" type="text" placeholder="Enter Email" #email>
+</div>
+<div>
+    <input id="phone" type="text" placeholder="Enter Phone number" #phone>
+</div>
+<div>
+    <input id="image" type="text" placeholder="Enter Image link" #image>
+</div>
+<div>
+<button id="submit" (click)="addContact(name.value ,email.value ,phone.value ,image.value)">Submit New Contact</button>
+</div>
+<div>
+    <table style="width: 100%;">
+        <tr>
+            <th>Name</th>
+            <th>Email-id</th>
+            <th>Phone-no</th>
+            <th>Image</th>
+        </tr>
+    <tr *ngFor="let a of contact" class = "option">
+        <td> {{a.name}}</td>
+        <td> {{a.email}}</td>
+        <td> {{a.phone_no}}</td>
+        <td><img src={{a.image}} width="50px" height="50px"></td>
+    </tr>
+    </table>
+</div>

@@ -1,0 +1,44 @@
+input, #submit {
+    align-items: center;
+    text-align: left;
+    padding-top: 2%;
+    width: 30%;
+    margin-top:2%;
+    font-size: 150%;
+    margin-left: 35%;
+    background-color: honeydew;
+    border-width: 1ch;
+}
+body {
+    height: 100%;
+}
+
+input:hover {
+    background-color: khaki;
+}
+#submit {
+    height: 2%;
+    width: 20%;
+    text-align: center;
+    border-radius: 40%;
+    margin-left: 40%;
+    padding-bottom: 2%;
+    background-color: rgb(42, 102, 42);
+    color: black;
+    font-weight: bold;
+}
+#submit:hover {
+    background-color: black;
+    color: green;
+}
+.table {
+    text-align: center;
+    background-color: violet;
+}
+th {
+    font-size: 170%;
+}
+td {
+    text-align: center;
+    font-size: 130%;
+}
